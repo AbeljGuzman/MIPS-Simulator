@@ -27,7 +27,7 @@ This simulator is designed to execute MIPS-like assembly instructions. It includ
 
 ## Usage
 
-To use the simulator, you can run `main.py`. Optionally, you can enable debugging mode by setting `debug=True`.
+To use the simulator, you can run `main.py` in a python IDE or vscode. Optionally, you can enable debugging mode by setting `debug=True`.
 
 Example:
 ```bash
