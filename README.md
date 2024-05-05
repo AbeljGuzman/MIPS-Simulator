@@ -12,7 +12,7 @@ This Python script simulates the execution of MIPS instructions using a simplifi
 - [Usage](#usage)
 - [Instructions Format](#instructions-format)
 - [Pipeline Stages](#pipeline-stages)
-
+- [Discrepancies](#Discrepancies)
 ## Introduction
 
 This simulator is designed to execute MIPS-like assembly instructions. It includes components for Register File (Registers.py), Arithmetic Logic Unit (ALU.py), Memory (Memory.py), Instruction Decoder (Decoder.py), and a simplified pipeline (Pipeline.py).
@@ -56,3 +56,7 @@ The simulator implements a simplified pipeline with the following stages:
 - Execution (EX)
 - Memory Access (MEM)
 - Write Back (WB)
+
+## Discrepancies
+
+The code currently operates with these instructions `add` `addi` `sub` `mult` `nop` `lw` `sw` `and` `or` `srl` `sll`. The code however breaks when another store or load is called. We were also not able to utilize the branch and jump commands like we wished to originally.
